@@ -22,74 +22,163 @@
   </header>
 
   <div class="page-title">
-    <h1>PDF Bid Results Extractor</h1>
+    <h1 id="page-heading">PDF Bid Results Extractor</h1>
     <p id="print-meta" class="print-only"></p>
-    <p class="sub">Upload an onlineplanservice.com Bid Results PDF. Nothing is stored; the file is parsed in memory.</p>
+    <div class="tabs" role="tablist" aria-label="Source type">
+      <button class="tab" role="tab" id="tab-pdf" aria-controls="panel-pdf" aria-selected="true"
+              data-heading="PDF Bid Results Extractor" data-hash="#pdf">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>
+        PDF Bid Results
+      </button>
+      <button class="tab" role="tab" id="tab-eml" aria-controls="panel-eml" aria-selected="false" tabindex="-1"
+              data-heading="Daily Email Report Extractor" data-hash="#email">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Daily Email Report (.eml)
+      </button>
+    </div>
   </div>
 
   <main>
-    <section class="card" id="upload-card">
-      <label id="dropzone" class="dropzone" tabindex="0">
-        <input id="file-input" type="file" accept="application/pdf,.pdf" hidden>
-        <span class="dz-title">Drop a PDF here</span>
-        <span class="dz-hint">or <u>browse files</u> &middot; max 20 MB</span>
-      </label>
-      <div id="file-info" class="file-info" hidden></div>
-      <div class="actions">
-        <button id="extract-btn" class="primary" disabled>Extract data</button>
-        <button id="clear-btn" class="ghost" hidden>Clear results</button>
-        <span id="spinner" class="spinner" hidden aria-label="Processing"></span>
-      </div>
-      <div id="error" class="error" role="alert" hidden></div>
-    </section>
-
-    <section id="results" hidden>
-      <div class="stats">
-        <div class="stat"><span id="stat-projects">0</span><label>projects</label></div>
-        <div class="stat"><span id="stat-bidders">0</span><label>bid rows</label></div>
-        <div class="stat"><span id="stat-flagged">0</span><label>flagged</label></div>
-        <div class="exports">
-          <button id="print-btn" class="icon-btn" type="button" title="Print results" aria-label="Print results">
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 9V3h12v6"/>
-              <rect x="3" y="9" width="18" height="8" rx="2"/>
-              <path d="M6 14h12v7H6z"/>
-              <circle cx="17.5" cy="12" r=".6" fill="currentColor"/>
-            </svg>
-          </button>
-          <button id="pdf-btn" class="icon-btn pdf" type="button" title="Export PDF report" aria-label="Export PDF report">
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/>
-              <path d="M14 3v5h5"/>
-              <path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/>
-            </svg>
-            <span>PDF</span>
-          </button>
-          <span class="divider" aria-hidden="true"></span>
-          <button id="dl-json" class="ghost">Download JSON</button>
-          <button id="dl-csv" class="ghost">Download CSV (projects)</button>
-          <button id="dl-bids" class="ghost">Download CSV (all bids)</button>
+    <!-- ============================ PDF tab ============================ -->
+    <div id="panel-pdf" class="tab-panel" role="tabpanel" aria-labelledby="tab-pdf">
+      <p class="sub">Upload an onlineplanservice.com Bid Results PDF. Nothing is stored; the file is parsed in memory.</p>
+      <section class="card upload-card" id="upload-card">
+        <label id="dropzone" class="dropzone" tabindex="0">
+          <input id="file-input" type="file" accept="application/pdf,.pdf" hidden>
+          <span class="dz-title">Drop a PDF here</span>
+          <span class="dz-hint">or <u>browse files</u> &middot; max 20 MB</span>
+        </label>
+        <div id="file-info" class="file-info" hidden></div>
+        <div class="actions">
+          <button id="extract-btn" class="primary" disabled>Extract data</button>
+          <button id="clear-btn" class="ghost" hidden>Clear results</button>
+          <span id="spinner" class="spinner" hidden aria-label="Processing"></span>
         </div>
-      </div>
-      <p class="hint">Click a row to see every bidder. Rows marked <span class="flag">flag</span> need a human look.</p>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Project name</th>
-              <th>Location</th>
-              <th>First contractor</th>
-              <th class="num">Bid amount</th>
-              <th>Lowest bidder</th>
-              <th>Bid date</th>
-              <th class="num">Bidders</th>
-            </tr>
-          </thead>
-          <tbody id="rows"></tbody>
-        </table>
-      </div>
-      <p id="empty" class="empty" hidden>No projects were found in this PDF.</p>
-    </section>
+        <div id="error" class="error" role="alert" hidden></div>
+      </section>
+
+      <section id="results" class="results" hidden>
+        <div class="stats">
+          <div class="stat"><span id="stat-projects">0</span><label>projects</label></div>
+          <div class="stat"><span id="stat-bidders">0</span><label>bid rows</label></div>
+          <div class="stat"><span id="stat-flagged">0</span><label>flagged</label></div>
+          <div class="exports">
+            <button id="print-btn" class="icon-btn" type="button" title="Print results" aria-label="Print results">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9V3h12v6"/>
+                <rect x="3" y="9" width="18" height="8" rx="2"/>
+                <path d="M6 14h12v7H6z"/>
+                <circle cx="17.5" cy="12" r=".6" fill="currentColor"/>
+              </svg>
+            </button>
+            <button id="pdf-btn" class="icon-btn pdf" type="button" title="Export PDF report" aria-label="Export PDF report">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/>
+                <path d="M14 3v5h5"/>
+                <path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/>
+              </svg>
+              <span>PDF</span>
+            </button>
+            <span class="divider" aria-hidden="true"></span>
+            <button id="dl-json" class="ghost">Download JSON</button>
+            <button id="dl-csv" class="ghost">Download CSV (projects)</button>
+            <button id="dl-bids" class="ghost">Download CSV (all bids)</button>
+          </div>
+        </div>
+        <p class="hint">Click a row to see every bidder. Rows marked <span class="flag">flag</span> need a human look.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Project name</th>
+                <th>Location</th>
+                <th>First contractor</th>
+                <th class="num">Bid amount</th>
+                <th>Lowest bidder</th>
+                <th>Bid date</th>
+                <th class="num">Bidders</th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+        <p id="empty" class="empty" hidden>No projects were found in this PDF.</p>
+      </section>
+    </div>
+
+    <!-- ========================= Email (.eml) tab ========================= -->
+    <div id="panel-eml" class="tab-panel" role="tabpanel" aria-labelledby="tab-eml" hidden>
+      <p class="sub">Upload an onlineplanservice.com Daily Email Report saved as <b>.eml</b>
+        (in Apple Mail: File &rsaquo; Save As &rsaquo; Raw Message Source; in Outlook: drag the email to a folder).
+        Nothing is stored.</p>
+      <section class="card upload-card">
+        <label id="eml-dropzone" class="dropzone" tabindex="0">
+          <input id="eml-file-input" type="file" accept=".eml,message/rfc822" hidden>
+          <span class="dz-title">Drop an .eml file here</span>
+          <span class="dz-hint">or <u>browse files</u> &middot; max 20 MB</span>
+        </label>
+        <div id="eml-file-info" class="file-info" hidden></div>
+        <div class="actions">
+          <button id="eml-extract-btn" class="primary" disabled>Extract data</button>
+          <button id="eml-clear-btn" class="ghost" hidden>Clear results</button>
+          <span id="eml-spinner" class="spinner" hidden aria-label="Processing"></span>
+        </div>
+        <div id="eml-error" class="error" role="alert" hidden></div>
+      </section>
+
+      <section id="eml-results" class="results" hidden>
+        <div class="stats">
+          <div class="stat"><span id="eml-stat-projects">0</span><label>projects</label></div>
+          <div class="stat"><span id="eml-stat-unique">0</span><label>unique</label></div>
+          <div class="stat"><span id="eml-stat-categories">0</span><label>categories</label></div>
+          <div class="stat"><span id="eml-stat-flagged">0</span><label>flagged</label></div>
+          <div class="exports">
+            <button id="eml-print-btn" class="icon-btn" type="button" title="Print results" aria-label="Print results">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9V3h12v6"/>
+                <rect x="3" y="9" width="18" height="8" rx="2"/>
+                <path d="M6 14h12v7H6z"/>
+                <circle cx="17.5" cy="12" r=".6" fill="currentColor"/>
+              </svg>
+            </button>
+            <button id="eml-pdf-btn" class="icon-btn pdf" type="button" title="Export PDF report" aria-label="Export PDF report">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/>
+                <path d="M14 3v5h5"/>
+                <path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/>
+              </svg>
+              <span>PDF</span>
+            </button>
+            <span class="divider" aria-hidden="true"></span>
+            <button id="eml-dl-json" class="ghost">Download JSON</button>
+            <button id="eml-dl-csv" class="ghost">Download CSV</button>
+          </div>
+        </div>
+
+        <div class="filters">
+          <div id="eml-category-chips" class="chips" role="group" aria-label="Filter by category"></div>
+          <input id="eml-search" class="search" type="search" placeholder="Search name, project no., location, source…" aria-label="Search projects">
+        </div>
+        <p class="hint"><span id="eml-showing"></span> Print, PDF and CSV include only the projects shown.</p>
+
+        <div class="table-wrap">
+          <table class="eml-table">
+            <thead>
+              <tr>
+                <th>Project name</th>
+                <th>Project no.</th>
+                <th>Bid date</th>
+                <th>Location</th>
+                <th>Bin #</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody id="eml-rows"></tbody>
+          </table>
+        </div>
+        <p id="eml-empty" class="empty" hidden>No projects match the current filter.</p>
+      </section>
+    </div>
   </main>
 
   <section id="contact" class="contact">
@@ -108,5 +197,7 @@
   </footer>
 
   <script src="/static/app.js"></script>
+  <script src="/static/eml.js"></script>
+  <script src="/static/tabs.js"></script>
 </body>
 </html>

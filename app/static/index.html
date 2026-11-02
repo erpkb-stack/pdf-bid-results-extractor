@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF Bid Results Extractor | BIM Collaboration LLC</title>
+  <link rel="icon" href="/static/logo.png">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="/" aria-label="BIM Collaboration LLC home">
+        <img src="/static/logo.png" alt="BIM Collaboration: Design | Model | Draft | Coordinate" width="760" height="254">
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="/" class="active">Bid Extractor</a>
+        <a href="#contact">Contact Us</a>
+        <a class="nav-cta" href="tel:801-792-8999">801-792-8999</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-title">
+    <h1>PDF Bid Results Extractor</h1>
+    <p id="print-meta" class="print-only"></p>
+    <p class="sub">Upload an onlineplanservice.com Bid Results PDF. Nothing is stored; the file is parsed in memory.</p>
+  </div>
+
+  <main>
+    <section class="card" id="upload-card">
+      <label id="dropzone" class="dropzone" tabindex="0">
+        <input id="file-input" type="file" accept="application/pdf,.pdf" hidden>
+        <span class="dz-title">Drop a PDF here</span>
+        <span class="dz-hint">or <u>browse files</u> &middot; max 20 MB</span>
+      </label>
+      <div id="file-info" class="file-info" hidden></div>
+      <div class="actions">
+        <button id="extract-btn" class="primary" disabled>Extract data</button>
+        <button id="clear-btn" class="ghost" hidden>Clear results</button>
+        <span id="spinner" class="spinner" hidden aria-label="Processing"></span>
+      </div>
+      <div id="error" class="error" role="alert" hidden></div>
+    </section>
+
+    <section id="results" hidden>
+      <div class="stats">
+        <div class="stat"><span id="stat-projects">0</span><label>projects</label></div>
+        <div class="stat"><span id="stat-bidders">0</span><label>bid rows</label></div>
+        <div class="stat"><span id="stat-flagged">0</span><label>flagged</label></div>
+        <div class="exports">
+          <button id="print-btn" class="icon-btn" type="button" title="Print results" aria-label="Print results">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9V3h12v6"/>
+              <rect x="3" y="9" width="18" height="8" rx="2"/>
+              <path d="M6 14h12v7H6z"/>
+              <circle cx="17.5" cy="12" r=".6" fill="currentColor"/>
+            </svg>
+          </button>
+          <button id="pdf-btn" class="icon-btn pdf" type="button" title="Export PDF report" aria-label="Export PDF report">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/>
+              <path d="M14 3v5h5"/>
+              <path d="M12 11v6M9.5 14.5 12 17l2.5-2.5"/>
+            </svg>
+            <span>PDF</span>
+          </button>
+          <span class="divider" aria-hidden="true"></span>
+          <button id="dl-json" class="ghost">Download JSON</button>
+          <button id="dl-csv" class="ghost">Download CSV (projects)</button>
+          <button id="dl-bids" class="ghost">Download CSV (all bids)</button>
+        </div>
+      </div>
+      <p class="hint">Click a row to see every bidder. Rows marked <span class="flag">flag</span> need a human look.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Project name</th>
+              <th>Location</th>
+              <th>First contractor</th>
+              <th class="num">Bid amount</th>
+              <th>Lowest bidder</th>
+              <th>Bid date</th>
+              <th class="num">Bidders</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p id="empty" class="empty" hidden>No projects were found in this PDF.</p>
+    </section>
+  </main>
+
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+      <h2>Contact Us</h2>
+      <div class="contact-card">
+        <h3>Main Office</h3>
+        <p><a href="tel:801-792-8999">801-792-8999</a></p>
+        <p><a href="mailto:contact@bimcollaboration.net">contact@bimcollaboration.net</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; BIM Collaboration LLC, 2021 - 2026</p>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

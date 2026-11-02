@@ -1,0 +1,612 @@
+{
+  "source_file": "input.pdf",
+  "total_projects": 15,
+  "total_bidders": 78,
+  "flagged_projects": 2,
+  "projects": [
+    {
+      "project_date": "8/27/2026",
+      "project_name": "Rancho Tract Water Main Replacement",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1362931&projectnum=VOPS26-01734&bx=VOPS&bxup=26-01734",
+      "location": "California City",
+      "first_contractor": "Kirk Construction",
+      "bid_amount": 891523.4,
+      "lowest_contractor": "Kirk Construction",
+      "lowest_amount": 891523.4,
+      "bidder_count": 8,
+      "bidders": [
+        {
+          "contractor_name": "Kirk Construction",
+          "bid_amount": 891523.4,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Sandex Construction",
+          "bid_amount": 903586.5,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Aventus NV",
+          "bid_amount": 964000.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "W.M. Lyles Co",
+          "bid_amount": 992540.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Advanced Engineering USA",
+          "bid_amount": 1048913.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Sierra Costruction & Excavation",
+          "bid_amount": 1108960.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "HPS Plumbing",
+          "bid_amount": 1258692.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Unified Field Services Co",
+          "bid_amount": 1450245.0,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "project_date": "9/1/2026",
+      "project_name": "Bystrum Area - Phase 1 Strengthen & Replace Water Mains",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1362799&projectnum=VOPS26-01727&bx=VOPS&bxup=26-01727",
+      "location": "Modesto",
+      "first_contractor": "Mid Cal Pipeline & Utilities, Inc.",
+      "bid_amount": 3863122.5,
+      "lowest_contractor": "Mid Cal Pipeline & Utilities, Inc.",
+      "lowest_amount": 3863122.5,
+      "bidder_count": 12,
+      "bidders": [
+        {
+          "contractor_name": "Mid Cal Pipeline & Utilities, Inc.",
+          "bid_amount": 3863122.5,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "D.A. Wood Construction, Inc.",
+          "bid_amount": 4058806.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Mozingo Construction",
+          "bid_amount": 4415908.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "KJ Woods Construction, Inc",
+          "bid_amount": 4488000.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Flowline Contractors, Inc",
+          "bid_amount": 4560357.45,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Koios Engineering Inc",
+          "bid_amount": 4949748.5,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Machado & Sons Construction, Inc",
+          "bid_amount": 5017000.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Rolfe Construction, Inc",
+          "bid_amount": 5161166.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "ARB, Inc",
+          "bid_amount": 5165109.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Katch Environmental, Inc",
+          "bid_amount": 5338799.99,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Dawson-Mauldin, LLC",
+          "bid_amount": 5382945.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "West Valley Construction Company, Inc",
+          "bid_amount": 5478336.5,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "project_date": "9/1/2026",
+      "project_name": "Door Repair & Door Operator Replacement, Stockton Combined Support Maintenance Shop (CSMS)",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1365090&projectnum=VOPS26-01830&bx=VOPS&bxup=26-01830",
+      "location": "Stockton",
+      "first_contractor": "Nor-Cal Overhead, Inc",
+      "bid_amount": 51084.18,
+      "lowest_contractor": "Nor-Cal Overhead, Inc",
+      "lowest_amount": 51084.18,
+      "bidder_count": 1,
+      "bidders": [
+        {
+          "contractor_name": "Nor-Cal Overhead, Inc",
+          "bid_amount": 51084.18,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "project_date": "9/2/2026",
+      "project_name": "East Las Palmas Avenue Over San Joaquin River Bridge Revegetation Project",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1363164&projectnum=VOPS26-01745&bx=VOPS&bxup=26-01745",
+      "location": "Patterson",
+      "first_contractor": "Arboricultural Specialties",
+      "bid_amount": 117000.0,
+      "lowest_contractor": "Arboricultural Specialties",
+      "lowest_amount": 117000.0,
+      "bidder_count": 2,
+      "bidders": [
+        {
+          "contractor_name": "Arboricultural Specialties",
+          "bid_amount": 117000.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "CLS/Cervantes Landscape Services, Inc.",
+          "bid_amount": 275000.0,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "project_date": "9/2/2026",
+      "project_name": "FY 27 Sewer Manhole Repair and Recoating Project",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1364139&projectnum=VOPS26-01786&bx=VOPS&bxup=26-01786",
+      "location": "Hanford",
+      "first_contractor": "Sancon Technologies",
+      "bid_amount": 58839.0,
+      "lowest_contractor": "Sancon Technologies",
+      "lowest_amount": 58839.0,
+      "bidder_count": 2,
+      "bidders": [
+        {
+          "contractor_name": "Sancon Technologies",
+          "bid_amount": 58839.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Dawson Mauldin LLC",
+          "bid_amount": 77000.0,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "project_date": "9/2/2026",
+      "project_name": "SSJID Restroom Accessibility Upgrade Building B",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1364266&projectnum=VOPS26-01795&bx=VOPS&bxup=26-01795",
+      "location": "Manteca",
+      "first_contractor": "Sierra Build Group",
+      "bid_amount": 176172.0,
+      "lowest_contractor": "Sierra Build Group",
+      "lowest_amount": 176172.0,
+      "bidder_count": 4,
+      "bidders": [
+        {
+          "contractor_name": "Sierra Build Group",
+          "bid_amount": 176172.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Branco Construction, Inc.",
+          "bid_amount": 178870.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "T & S Intermodal Maintenance, Inc.",
+          "bid_amount": 204700.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Creative Property Renewal",
+          "bid_amount": 238303.0,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "project_date": "9/2/2026",
+      "project_name": "Construction of Residential Improvements in Drainage Area DK",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1366329&projectnum=VOPS26-01891&bx=VOPS&bxup=26-01891",
+      "location": "Fresno",
+      "first_contractor": "GC Builders",
+      "bid_amount": 122375.0,
+      "lowest_contractor": "GC Builders",
+      "lowest_amount": 122375.0,
+      "bidder_count": 2,
+      "bidders": [
+        {
+          "contractor_name": "GC Builders",
+          "bid_amount": 122375.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Yanez Construction",
+          "bid_amount": 180000.0,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "project_date": "9/3/2026",
+      "project_name": "Sitework Bid Package-New Restroom Modular Building at Pixley Elementary School",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1363755&projectnum=VOPS26-01764&bx=VOPS&bxup=26-01764",
+      "location": "Pixley",
+      "first_contractor": "Oral E. Micham, Inc.",
+      "bid_amount": 774000.0,
+      "lowest_contractor": "Oral E. Micham, Inc.",
+      "lowest_amount": 774000.0,
+      "bidder_count": 6,
+      "bidders": [
+        {
+          "contractor_name": "Oral E. Micham, Inc.",
+          "bid_amount": 774000.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "HS Construction, Inc.",
+          "bid_amount": 797235.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Forcum/Mackey Construction",
+          "bid_amount": 830000.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "GC Builders",
+          "bid_amount": 903367.8,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "BDM Inc.",
+          "bid_amount": 918785.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "JTS Construction",
+          "bid_amount": 944889.0,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "project_date": "9/3/2026",
+      "project_name": "Avenue 176 at Road 276 Box Culvert Replacement Project",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1364792&projectnum=VOPS26-01813&bx=VOPS&bxup=26-01813",
+      "location": "Porterville",
+      "first_contractor": "Archer Civil Construction LLC",
+      "bid_amount": 498480.57,
+      "lowest_contractor": "Archer Civil Construction LLC",
+      "lowest_amount": 498480.57,
+      "bidder_count": 7,
+      "bidders": [
+        {
+          "contractor_name": "Archer Civil Construction LLC",
+          "bid_amount": 498480.57,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Agee Construction Corp.",
+          "bid_amount": 535280.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Superior Ag Construction, Inc.",
+          "bid_amount": 553443.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Moka Construction",
+          "bid_amount": 558141.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Dawson Mauldin LLC",
+          "bid_amount": 582180.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "American Paving Co.",
+          "bid_amount": 605945.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Cal Valley Construction",
+          "bid_amount": 621616.0,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "project_date": "9/3/2026",
+      "project_name": "Signal Coordination on Lander Ave",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1365034&projectnum=VOPS26-01823&bx=VOPS&bxup=26-01823",
+      "location": "Turlock",
+      "first_contractor": "Tim Paxin's Pacific Excavation, Inc.",
+      "bid_amount": 119248.0,
+      "lowest_contractor": "St. Francis Electric",
+      "lowest_amount": 60505.0,
+      "bidder_count": 4,
+      "bidders": [
+        {
+          "contractor_name": "Tim Paxin's Pacific Excavation, Inc.",
+          "bid_amount": 119248.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Bear Electrical Solutions",
+          "bid_amount": 129150.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "St. Francis Electric",
+          "bid_amount": 60505.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "DC Electric Group",
+          "bid_amount": 68400.0,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": [
+        "first_listed_not_lowest"
+      ]
+    },
+    {
+      "project_date": "9/3/2026",
+      "project_name": "Signal Coordination on Christoffersen Parkway",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1365047&projectnum=VOPS26-01824&bx=VOPS&bxup=26-01824",
+      "location": "Turlock",
+      "first_contractor": "DC Electric Group",
+      "bid_amount": 169955.0,
+      "lowest_contractor": "DC Electric Group",
+      "lowest_amount": 169955.0,
+      "bidder_count": 4,
+      "bidders": [
+        {
+          "contractor_name": "DC Electric Group",
+          "bid_amount": 169955.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "St. Francis Electric",
+          "bid_amount": 178810.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Bear Electrical Solutions",
+          "bid_amount": 190251.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Tim Paxin's Excavation",
+          "bid_amount": 268988.0,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "project_date": "9/3/2026",
+      "project_name": "TUSD Kimball High School 2-Story CR Building Increment 1",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1366090&projectnum=VOPS26-01877&bx=VOPS&bxup=26-01877",
+      "location": "Tracy",
+      "first_contractor": "F & H Construction",
+      "bid_amount": 5237000.0,
+      "lowest_contractor": "F & H Construction",
+      "lowest_amount": 5237000.0,
+      "bidder_count": 4,
+      "bidders": [
+        {
+          "contractor_name": "F & H Construction",
+          "bid_amount": 5237000.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Rodan Builders",
+          "bid_amount": 5686000.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "BHM Construction Inc.",
+          "bid_amount": 6055000.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "EF Brett & Company, Inc.",
+          "bid_amount": 6425000.0,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "project_date": "9/3/2026",
+      "project_name": "SB1383 2026 Procurement Requirement for Recovered Organic Waste Product",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1367708&projectnum=VOPS26-01942&bx=VOPS&bxup=26-01942",
+      "location": "Fresno",
+      "first_contractor": "Agromin",
+      "bid_amount": null,
+      "lowest_contractor": null,
+      "lowest_amount": null,
+      "bidder_count": 5,
+      "bidders": [
+        {
+          "contractor_name": "Agromin",
+          "bid_amount": null,
+          "amount_status": "no_price"
+        },
+        {
+          "contractor_name": "Bakke Ag Service Inc.",
+          "bid_amount": null,
+          "amount_status": "no_price"
+        },
+        {
+          "contractor_name": "DTE Energy Services",
+          "bid_amount": null,
+          "amount_status": "no_price"
+        },
+        {
+          "contractor_name": "Rio Bravo Rocklin",
+          "bid_amount": null,
+          "amount_status": "no_price"
+        },
+        {
+          "contractor_name": "West Coast Waste, Inc.",
+          "bid_amount": null,
+          "amount_status": "no_price"
+        }
+      ],
+      "flags": [
+        "no_prices_listed"
+      ]
+    },
+    {
+      "project_date": "9/4/2026",
+      "project_name": "FY2026/2027 Asphalt/Concrete Patching On-Call Services",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1364142&projectnum=VOPS26-01787&bx=VOPS&bxup=26-01787",
+      "location": "Madera",
+      "first_contractor": "Tosted Asphalt Incorporated",
+      "bid_amount": 245550.0,
+      "lowest_contractor": "Tosted Asphalt Incorporated",
+      "lowest_amount": 245550.0,
+      "bidder_count": 7,
+      "bidders": [
+        {
+          "contractor_name": "Tosted Asphalt Incorporated",
+          "bid_amount": 245550.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Witbro, Inc. dba Seal Rite Paving & Grading",
+          "bid_amount": 370348.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "United Pavement Maintenance",
+          "bid_amount": 430212.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Martin Brothers Construction",
+          "bid_amount": 430822.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Arrow Construction",
+          "bid_amount": 559400.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "QA Constructors, Inc",
+          "bid_amount": 586600.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Cal Valley Construction, Inc",
+          "bid_amount": 2596600.0,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": []
+    },
+    {
+      "project_date": "9/8/2026",
+      "project_name": "Road Rehabilitation Various Locations",
+      "project_url": "https://login.onlineplanservice.com/filter.aspx?BidPackageID=1365577&projectnum=VOPS26-01856&bx=VOPS&bxup=26-01856",
+      "location": "Madera",
+      "first_contractor": "Avison Construction, Inc.",
+      "bid_amount": 891450.0,
+      "lowest_contractor": "Avison Construction, Inc.",
+      "lowest_amount": 891450.0,
+      "bidder_count": 10,
+      "bidders": [
+        {
+          "contractor_name": "Avison Construction, Inc.",
+          "bid_amount": 891450.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Consolidated Engineering, Inc.",
+          "bid_amount": 1013685.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Cal Valley Construction, Inc.",
+          "bid_amount": 1107125.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Agee Construction Corporation",
+          "bid_amount": 1109590.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Granite Construction Company",
+          "bid_amount": 1184675.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "United Pavement Maintenance, Inc",
+          "bid_amount": 1233700.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Martin Brothers Construction",
+          "bid_amount": 1299901.0,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Arrow Drillers, Inc dba Arrow Construction",
+          "bid_amount": 1415808.25,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Dawson-Mauldin LLC",
+          "bid_amount": 1488087.5,
+          "amount_status": "ok"
+        },
+        {
+          "contractor_name": "Katch Environmental, Inc",
+          "bid_amount": 1681727.25,
+          "amount_status": "ok"
+        }
+      ],
+      "flags": []
+    }
+  ]
+}

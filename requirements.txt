@@ -1,0 +1,9 @@
+fastapi>=0.110,<1.0
+uvicorn>=0.29
+python-multipart>=0.0.9
+# 1.27.x is the newest line with prebuilt Intel-Mac wheels that Anaconda's Python accepts.
+# Newer versions may fall back to a source build that fails on macOS.
+pymupdf>=1.24,<1.28
+# tests
+pytest>=8
+httpx>=0.27
